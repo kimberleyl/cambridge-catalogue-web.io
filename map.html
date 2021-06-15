@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7" ></div>
+        
+</body>
+<script>    
+    
+            var map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7 = L.map(
+                "map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7",
+                {
+                    center: [52.2, 0.1167],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f5d56b7d8af48bf99d7be8cb71cf4aa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+            var circle_marker_154280ad30ab40a2ae1ba27207ff62ac = L.circleMarker(
+                [52.2, 0.1167],
+                {"bubblingMouseEvents": true, "color": "#0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 100, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+            var tile_layer_9c46becec30d478cb11efe11152377e0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+            var circle_marker_d8ba99e2358643d6ad3d13cc56798f84 = L.circleMarker(
+                [52.21511459, 0.1058071032],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 100, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+        var popup_6f927035fa1d4c74a5e5ebdfcc57b2bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85de66fc80e74fa59327eed1822f6acb = $(`<div id="html_85de66fc80e74fa59327eed1822f6acb" style="width: 100.0%; height: 100.0%;"><b>Fitzwilliam College Main Hall</b><br>1960<br>Denys Lasdun<br><img src=https://www.fitz.cam.ac.uk/sites/default/files/inline-images/Varsity%20-%20Architecture%201.jpeg width=300px><br>The roof refurbishment of the central building at cambridge university’s fitzwilliam college is one of the first major projects to use a new, pioneering approach combining sika sarnafil’s single ply membrane with large areas of its sikalastic 621 – a liquid applied product typically used for areas with complex detailing.</div>`)[0];
+            popup_6f927035fa1d4c74a5e5ebdfcc57b2bc.setContent(html_85de66fc80e74fa59327eed1822f6acb);
+        
+
+        circle_marker_d8ba99e2358643d6ad3d13cc56798f84.bindPopup(popup_6f927035fa1d4c74a5e5ebdfcc57b2bc)
+        ;
+
+        
+    
+    
+            var circle_marker_ac0d907948fe4807b3ce9bccbac2931c = L.circleMarker(
+                [52.21201324, 0.1148397923],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 100, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+        var popup_f3448acbca0d4a6e8ce3baacb323946c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c12ff24ec1441d29445f90863826573 = $(`<div id="html_6c12ff24ec1441d29445f90863826573" style="width: 100.0%; height: 100.0%;"><b>Castle Mound</b><br>40<br>Norman Kings<br><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/The_Cambridge_Castle_Mound.jpg/375px-The_Cambridge_Castle_Mound.jpg width=300px><br>Cambridge Castle, locally also known as Castle Mound, is located in Cambridge, Cambridgeshire, England. Originally built after the Norman conquest to control the strategically important route to the north of England, it played a role in the conflicts of the Anarchy, the First and Second Barons' Wars. Hugely expanded by Edward I, the castle then fell rapidly into disuse in the late medieval era, its stonework recycled for building purposes in the surrounding colleges. Cambridge Castle was refortified during the English Civil War but once again fell into disuse, used primarily as the county gaol. The castle gaol was finally demolished in 1842, with a new prison built in the castle bailey. This prison was demolished in 1932, replaced with the modern Shire Hall, and only the castle motte and limited earthworks still stand. The site is open to the public daily and offers views over the historic buildings of the city.</div>`)[0];
+            popup_f3448acbca0d4a6e8ce3baacb323946c.setContent(html_6c12ff24ec1441d29445f90863826573);
+        
+
+        circle_marker_ac0d907948fe4807b3ce9bccbac2931c.bindPopup(popup_f3448acbca0d4a6e8ce3baacb323946c)
+        ;
+
+        
+    
+    
+            var circle_marker_cc831e54e41c45e1af2645be34f5390f = L.circleMarker(
+                [52.20014954, 0.1195406914],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 100, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d7cfa4bf14c45c3ba3a6ab2eaa490d7);
+        
+    
+        var popup_e237c7b1792d4bd68a9b7b0aab7300b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f91086bd4aed4c688388557980297185 = $(`<div id="html_f91086bd4aed4c688388557980297185" style="width: 100.0%; height: 100.0%;"><b>Fitzwilliam Museum</b><br>1816<br>George Basevi and C. R. Cockerell<br><img src=https://www.artfund.org/thumbnail/908/assets/what-to-see/museums-and-galleries/d-g/fitzwilliam-museum/fitzwilliam-exterior-2.jpg width=300px><br>The Fitzwilliam now contains over 500,000 items and is one of the best museums in the United Kingdom.[3] The collection was initially placed in the Perse School building in Free School Lane. It was moved in 1842 to the Old Schools in central Cambridge, which housed the Cambridge University Library.</div>`)[0];
+            popup_e237c7b1792d4bd68a9b7b0aab7300b9.setContent(html_f91086bd4aed4c688388557980297185);
+        
+
+        circle_marker_cc831e54e41c45e1af2645be34f5390f.bindPopup(popup_e237c7b1792d4bd68a9b7b0aab7300b9)
+        ;
+
+        
+    
+</script>
